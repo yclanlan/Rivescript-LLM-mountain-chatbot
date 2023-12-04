@@ -222,12 +222,10 @@ async function preGenerateText() {
 
 }
 
-function toggleError(button) { 
+function pressed() { 
   
-      button.className = '';
       preGenerateText();
       conversationTurn = 10;
       console.log('turn='+conversationTurn);
    
-  
 }
