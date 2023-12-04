@@ -140,6 +140,15 @@ html{
     text-align: center;
     
   }
+
+  #showOnMobileButton{
+    bottom:0%;
+    right:10%;
+    font-size: 2rem !important;
+    position:fixed;
+    z-index: 100;
+    
+  }
   
   
 }
@@ -290,6 +299,15 @@ textarea{
   width: 100%;
   margin: auto;
   text-align: center; 
+}
+
+#showOnMobileButton{
+  display: block;
+  bottom:-5%;
+  margin:auto;
+  font-size: 0.5rem;
+  position: absolute;
+
 }
 
 }

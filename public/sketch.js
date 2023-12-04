@@ -221,3 +221,14 @@ async function preGenerateText() {
   console.log(response);
 
 }
+
+function toggleError(button) { 
+  
+      // HIDE ERROR
+      button.className = '';
+      preGenerateText();
+      conversationTurn = 10;
+      console.log('turn='+conversationTurn);
+   
+  
+}
