@@ -191,9 +191,12 @@ async function chat() {
 function preventNewLine(event) {
   if (event.keyCode === 13) {
     event.preventDefault();
-    if (conversationTurn <= 11){
+    if (conversationTurn <= 10){
       chat();
     }else{
+      if(random()>=0.5){
+        chat();
+      }
       generateText();
     }
     
