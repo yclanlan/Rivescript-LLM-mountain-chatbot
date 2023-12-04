@@ -224,7 +224,6 @@ async function preGenerateText() {
 
 function toggleError(button) { 
   
-      // HIDE ERROR
       button.className = '';
       preGenerateText();
       conversationTurn = 10;
