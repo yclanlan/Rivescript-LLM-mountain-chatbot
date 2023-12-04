@@ -107,7 +107,7 @@ html{
   .input{
     font-size: 1.2rem;
     z-index: 1;
-    width:100%;
+    width:90%;
 
     bottom:15%;
     position: absolute;
