@@ -194,9 +194,9 @@ function preventNewLine(event) {
     if (conversationTurn <= 10){
       chat();
     }else{
-      if(random()>=0.5){
-        chat();
-      }
+      // if(random()>=0.5){
+      //   chat();
+      // }
       generateText();
     }
     
