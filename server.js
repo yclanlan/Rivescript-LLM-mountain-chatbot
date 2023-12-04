@@ -21,6 +21,7 @@ app.post('/api/text', async (request, response) => {
   const model = 'meta/llama-2-70b-chat';
   const options = { 
     version,
+    Headers:{'Content-Type': 'application/json'},
     input:{
       prompt: request.body.prompt,
       system_prompt: 'You are a speechless mountain who loves dad jokes. You only speak short sentences and always keep the conversation short.',
