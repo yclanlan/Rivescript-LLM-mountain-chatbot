@@ -9,7 +9,7 @@
 
 <hr>
 
-### error log
+## error log
 
 got some error message with undefine stuff
 in the response 
@@ -18,7 +18,7 @@ in the response
 
 <hr>
 
-### note for myself
+## note for myself
 
 (push to heroku)
 
