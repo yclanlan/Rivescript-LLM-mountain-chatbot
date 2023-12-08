@@ -131,12 +131,11 @@ async function chat() {
     let txt = prompt.value();
 
     let wordsByUser = createElement('p', txt + '  ');
-    wordsByUser.style('background-color', '#ffffff');
-    wordsByUser.style('color', '#000000');
+    wordsByUser.style('background-color', '#64cde2');
+    wordsByUser.style('color', '#000');
     wordsByUser.style('border-radius', '2rem');
-    wordsByUser.style('text-align', 'left');
+    wordsByUser.style('text-align', 'right');
     wordsByUser.style('align-items', 'flex');
-    wordsByUser.style('padding-left', '1rem');
     wordsByUser.parent('output');
   
     console.log('sending text to api');
