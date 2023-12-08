@@ -5,13 +5,11 @@ function setup() {
   // preGenerateText();
   noCanvas();
   noLoop();
- 
-  prompt = createInput('HIHI');
-  prompt.style('display', 'none');
-  prompt.changed(generateText);
+
 
   // let button = select('#submit');
   prompt = select('#user_input');
+  // prompt.changed(generateText);
   prompt.elt.addEventListener('keydown', preventNewLine);
   // text_output = select('#output');
   // createButton('generateText').mousePressed(generateText);
@@ -188,9 +186,11 @@ async function chat() {
 
 
 function preventNewLine(event) {
+
+  // console.log (event.keyCode);
   if (event.keyCode === 13) {
     event.preventDefault();
-    if (conversationTurn <= 10){
+    if (conversationTurn <= 9){
       chat();
     }else{
       // if(random()>=0.5){
