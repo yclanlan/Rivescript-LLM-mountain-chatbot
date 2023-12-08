@@ -1,0 +1,65 @@
+
+2023-12-08T15:32:29.000000+00:00 app[api]: Build succeeded
+2023-12-08T15:33:04.837364+00:00 heroku[router]: at=info method=GET path="/" host=talk-to-lans-mountain-a212fffbda9a.herokuapp.com request_id=f29b6dec-a831-4313-8d22-fe27b5aada22 fwd="216.165.95.133" dyno=web.1 connect=0ms service=8ms status=200 bytes=1767 protocol=https
+2023-12-08T15:33:04.887151+00:00 heroku[router]: at=info method=GET path="/question.js" host=talk-to-lans-mountain-a212fffbda9a.herokuapp.com request_id=8e1e6f55-1593-4462-a7e1-2c95f22a43fb fwd="216.165.95.133" dyno=web.1 connect=0ms service=2ms status=200 bytes=12937 protocol=https
+2023-12-08T15:33:04.888341+00:00 heroku[router]: at=info method=GET path="/style.css" host=talk-to-lans-mountain-a212fffbda9a.herokuapp.com request_id=ae05b69d-ee5a-4361-9237-c4954ba8f8c3 fwd="216.165.95.133" dyno=web.1 connect=0ms service=3ms status=200 bytes=4442 protocol=https
+2023-12-08T15:33:04.904467+00:00 heroku[router]: at=info method=GET path="/sketch.js" host=talk-to-lans-mountain-a212fffbda9a.herokuapp.com request_id=a45fcc21-c2db-4398-aa87-9a5ae5c6d28b fwd="216.165.95.133" dyno=web.1 connect=0ms service=1ms status=200 bytes=5942 protocol=https
+2023-12-08T15:33:05.473907+00:00 heroku[router]: at=info method=GET path="/mountains.gif" host=talk-to-lans-mountain-a212fffbda9a.herokuapp.com request_id=e9308da4-b778-4932-ae46-c9926291fc77 fwd="216.165.95.133" dyno=web.1 connect=0ms service=7ms status=200 bytes=1181616 protocol=https
+2023-12-08T15:33:05.766071+00:00 heroku[router]: at=info method=GET path="/brain.rive.txt" host=talk-to-lans-mountain-a212fffbda9a.herokuapp.com request_id=08a8e58a-c194-487e-9dda-33bc3cd45b9f fwd="216.165.95.133" dyno=web.1 connect=1ms service=2ms status=200 bytes=1248 protocol=https
+
+2023-12-08T15:34:09.967289+00:00 app[web.1]: {
+2023-12-08T15:34:09.967373+00:00 app[web.1]: version: '35042c9a33ac8fd5e29e27fb3197f33aa483f72c2ce3b0b9d201155c7fd2a287',
+2023-12-08T15:34:09.967374+00:00 app[web.1]: Headers: { 'Content-Type': 'application/json' },
+2023-12-08T15:34:09.967374+00:00 app[web.1]: input: {
+2023-12-08T15:34:09.967376+00:00 app[web.1]: prompt: 'Hi mountain, are you there?',
+2023-12-08T15:34:09.967377+00:00 app[web.1]: system_prompt: 'You are a speechless mountain who loves dad jokes. You only speak short sentences and always keep the conversation short.',
+2023-12-08T15:34:09.967382+00:00 app[web.1]: max_new_tokens: 128,
+2023-12-08T15:34:09.967383+00:00 app[web.1]: temperature: 0.85
+2023-12-08T15:34:09.967383+00:00 app[web.1]: },
+2023-12-08T15:34:09.967383+00:00 app[web.1]: stream: true
+2023-12-08T15:34:09.967384+00:00 app[web.1]: }
+2023-12-08T15:34:11.181657+00:00 app[web.1]: undefined:1
+2023-12-08T15:34:11.181740+00:00 app[web.1]: undefined
+2023-12-08T15:34:11.181740+00:00 app[web.1]: ^
+2023-12-08T15:34:11.181741+00:00 app[web.1]: 
+2023-12-08T15:34:11.181742+00:00 app[web.1]: SyntaxError: "undefined" is not valid JSON
+2023-12-08T15:34:11.181742+00:00 app[web.1]: at JSON.parse (<anonymous>)
+2023-12-08T15:34:11.181743+00:00 app[web.1]: at EventSource.<anonymous> (file:///app/server.js:66:35)
+2023-12-08T15:34:11.181744+00:00 app[web.1]: at EventSource.emit (node:events:514:28)
+2023-12-08T15:34:11.181744+00:00 app[web.1]: at _emit (/app/node_modules/eventsource/lib/eventsource.js:287:17)
+2023-12-08T15:34:11.181745+00:00 app[web.1]: at onConnectionClosed (/app/node_modules/eventsource/lib/eventsource.js:58:5)
+2023-12-08T15:34:11.181745+00:00 app[web.1]: at IncomingMessage.<anonymous> (/app/node_modules/eventsource/lib/eventsource.js:187:9)
+2023-12-08T15:34:11.181745+00:00 app[web.1]: at IncomingMessage.emit (node:events:526:35)
+2023-12-08T15:34:11.181746+00:00 app[web.1]: at endReadableNT (node:internal/streams/readable:1589:12)
+2023-12-08T15:34:11.181746+00:00 app[web.1]: at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-08T15:34:11.181746+00:00 app[web.1]: 
+2023-12-08T15:34:11.181747+00:00 app[web.1]: Node.js v20.10.0
+2023-12-08T15:34:11.190454+00:00 app[web.1]: npm notice
+2023-12-08T15:34:11.190595+00:00 app[web.1]: npm notice New patch version of npm available! 10.2.3 -> 10.2.5
+2023-12-08T15:34:11.190719+00:00 app[web.1]: npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.2.5>
+2023-12-08T15:34:11.190853+00:00 app[web.1]: npm notice Run `npm install -g npm@10.2.5` to update!
+2023-12-08T15:34:11.190916+00:00 app[web.1]: npm notice
+2023-12-08T15:34:11.322941+00:00 heroku[web.1]: Process exited with status 1
+2023-12-08T15:34:11.350144+00:00 heroku[web.1]: State changed from up to crashed
+2023-12-08T15:34:11.187610+00:00 heroku[router]: sock=backend at=error code=H18 desc="Server Request Interrupted" method=POST path="/api/text" host=talk-to-lans-mountain-a212fffbda9a.herokuapp.com request_id=d3ea48f3-e499-48c9-9414-5f6a829502aa fwd="216.165.95.133" dyno=web.1 connect=0ms service=1231ms status=503 bytes= protocol=https
+
+
+
+
+
+
+// HERE IS THE NORMAL ONE I USUALLY GOT, WITHOUT THE UNDEFINED (THE SAME PROBLEM HAPPENED LOCALLY)//
+
+2023-12-08T15:35:20.210246+00:00 app[web.1]: {
+2023-12-08T15:35:20.210323+00:00 app[web.1]: version: '35042c9a33ac8fd5e29e27fb3197f33aa483f72c2ce3b0b9d201155c7fd2a287',
+2023-12-08T15:35:20.210324+00:00 app[web.1]: Headers: { 'Content-Type': 'application/json' },
+2023-12-08T15:35:20.210324+00:00 app[web.1]: input: {
+2023-12-08T15:35:20.210324+00:00 app[web.1]: prompt: 'Hi mountain, are you there?',
+2023-12-08T15:35:20.210325+00:00 app[web.1]: system_prompt: 'You are a speechless mountain who loves dad jokes. You only speak short sentences and always keep the conversation short.',
+2023-12-08T15:35:20.210325+00:00 app[web.1]: max_new_tokens: 128,
+2023-12-08T15:35:20.210327+00:00 app[web.1]: temperature: 0.85
+2023-12-08T15:35:20.210327+00:00 app[web.1]: },
+2023-12-08T15:35:20.210327+00:00 app[web.1]: stream: true
+2023-12-08T15:35:20.210327+00:00 app[web.1]: }
+2023-12-08T15:35:24.107506+00:00 heroku[router]: at=info method=POST path="/api/text" host=talk-to-lans-mountain-a212fffbda9a.herokuapp.com request_id=fc2d279e-ec34-4fc8-bca6-b5e1598ee185 fwd="216.165.95.133" dyno=web.1 connect=0ms service=3905ms status=200 bytes=446 protocol=https
+
