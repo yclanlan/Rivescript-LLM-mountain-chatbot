@@ -148,7 +148,7 @@ async function chat() {
       body: JSON.stringify({ prompt: prompt.value() }),
     });
 
-    // console.log(response);
+    console.log(response.body);
 
 
     // Initialize a stream reader from the server response
