@@ -16,10 +16,10 @@ In the technical part, I used [RiveScript](https://www.rivescript.com/) first, a
 
 <hr>
 
-## error log
+## Error log on the API to LLM side
 
-got some error message with undefine stuff
-in the response 
+At the error part, sometimes got error messages with undefine stuff
+in the end of the response 
 
 [see the logs here](https://github.com/yclanlan/a2z-final/blob/main/error-log)
 
