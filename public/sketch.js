@@ -147,6 +147,8 @@ async function chat() {
     });
 
     console.log(response.body);
+    conversationTurn++;
+    console.log("turn="+conversationTurn);
 
 
     // Initialize a stream reader from the server response
@@ -170,6 +172,7 @@ async function chat() {
       botRepsonse.html(botRepsonse.html() + new TextDecoder().decode(value));
       botRepsonse.parent('output');
 
+
       
     }
 
@@ -192,16 +195,20 @@ function preventNewLine(event) {
     event.preventDefault();
     if (conversationTurn <= 9){
       chat();
-    }else{
-      // if(random()>=0.5){
-      //   chat();
-      // }
+
+    }else if(conversationTurn ===10){
+      chat();
+      console.log('change background');
+      changeBackground();
+
+    }else{   
       generateText();
     }
     
     
   }
 }
+
 
 
 async function preGenerateText() {
@@ -221,10 +228,26 @@ async function preGenerateText() {
 
 }
 
+
+
+function changeBackground() {
+  // background-color: rgb(110, 110, 238);
+  // background-image: url(mountains.gif);
+
+  // document.body.style.backgroundcolor= rgb(110, 110, 238);
+  let bg = select('#body');
+  console.log('background-image:'+ bg.elt.style.backgroundImage);
+  bg.elt.style.backgroundColor= 'rgb(255, 168, 97);';
+  bg.elt.style.backgroundImage= 'url(hiphopmountain.gif)';
+ 
+
+  console.log('change');
+}
+
 function pressed() { 
   
-      preGenerateText();
-      conversationTurn = 10;
-      console.log('turn='+conversationTurn);
-   
+  preGenerateText();
+  conversationTurn = 10;
+  console.log('turn='+conversationTurn);
+
 }

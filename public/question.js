@@ -334,7 +334,7 @@ async function askQuestion() {
   
   async function askQuestion6() {
     // This is where you can make the bot ask a question
-    let thinking ="The last one..is comong"
+    let thinking ="The last one..is coming"
     let botQuestion = " Why is “dark” is spelled with a “k” not a “c”?";
     let botQuestion2 = " Because you cannot c in the dark.";
     let botQuestion3 = " I'm sorry, hope you still like to talk to me";
