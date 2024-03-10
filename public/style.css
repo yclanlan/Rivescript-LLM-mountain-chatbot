@@ -18,7 +18,7 @@ html{
     background-position-y: bottom;
     background-position-x: right;
   
-    font-size: 3.35rem;
+    font-size: 4vw;
    
    
     
@@ -42,7 +42,7 @@ html{
   }
   
   #output{
-    width:100%;
+    width:90%;
     display: flex;
     flex-direction:column; 
     margin: 1rem ;
@@ -78,7 +78,7 @@ html{
     display: block;
     font-family: 'Amatic SC', sans-serif;
     z-index: 2;
-    font-size: 12rem;
+    font-size: 20vw;
     color:#F3CA17;
     width: 100%;
     
@@ -107,8 +107,10 @@ html{
     font-size: 1.2rem;
     z-index: 1;
     width:90%;
+    
+   
 
-    bottom:15%;
+    bottom:15vh;
     position: absolute;
     /* transform: translateY(-50%); */
   
@@ -116,8 +118,8 @@ html{
   
   
   textarea{
-    font-size: 3rem!important;
-    height:5rem !important;
+    font-size: 3vh!important;
+    height:5vh !important;
   }
   
   #user_input{
@@ -133,7 +135,7 @@ html{
   }
   .showOnMobile{
     display: block ;
-    font-size: 3rem;
+    font-size: 3vh;
     width: 100%;
     margin: auto;
     text-align: center;
