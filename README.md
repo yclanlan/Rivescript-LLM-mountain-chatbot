@@ -37,4 +37,3 @@ $ git commit -am "message"
 
 $ git push heroku main
 
-update
