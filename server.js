@@ -18,11 +18,9 @@ const replicate = new Replicate({
 console.log(replicate.userAgent);
 
 app.post('/api/text', async (request, response) => {
-  const version =
-    '35042c9a33ac8fd5e29e27fb3197f33aa483f72c2ce3b0b9d201155c7fd2a287';
-  const model = 'meta/llama-2-70b-chat';
+  const model = 'meta/meta-llama-3-70b-instruct';
   const options = {
-    version,
+    model,
     Headers: {
       'Content-Type': 'application/json'
     },
@@ -40,7 +38,7 @@ app.post('/api/text', async (request, response) => {
 
 
 
-  // const output = await replicate.run(`${model}:${version}`, { input });
+  // const output = await replicate.run(model, { input });
   // response.json({ output });
 
 
