@@ -5,8 +5,8 @@
 // /pages/index.js - If using Next.js (optional)
 
 // /api/text.js
-import Replicate from 'replicate';
-import * as dotenv from 'dotenv';
+const Replicate = require('replicate');
+const dotenv = require('dotenv');
 
 // Initialize dotenv
 dotenv.config();
@@ -16,7 +16,7 @@ const replicate = new Replicate({
   auth: process.env.REPLICATE_API_TOKEN,
 });
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   // Only allow POST requests
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
