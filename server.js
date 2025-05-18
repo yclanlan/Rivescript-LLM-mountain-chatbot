@@ -44,6 +44,7 @@ app.post('/api/text', async (request, response) => {
     console.error('Error during streaming:', error);
     response.status(500).send('Error during streaming');
   }
+  
 });
 
 
