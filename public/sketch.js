@@ -223,8 +223,8 @@ async function preGenerateText() {
     },
     body: JSON.stringify({ prompt: txt }),
   });
-
   console.log(response);
+  console.log(response.body);
 
 }
 
